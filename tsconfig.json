@@ -16,6 +16,18 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@vicomm/core": ["packages/core/src"],
+      "@vicomm/core/*": ["packages/core/src/*"],
+      "@vicomm/common": ["packages/common/src"],
+      "@vicomm/common/*": ["packages/common/src/*"],
+      "@vicomm/config": ["packages/config/src"],
+      "@vicomm/config/*": ["packages/config/src/*"],
+      "@vicomm/kafka": ["packages/kafka/src"],
+      "@vicomm/kafka/*": ["packages/kafka/src/*"],
+      "@vicomm/nats-server": ["packages/nats-server/src"],
+      "@vicomm/nats-server/*": ["packages/nats-server/src/*"]
+    }
   }
 }

@@ -5,5 +5,7 @@
  * MIT Licensed
  */
 
-export * from './middleware';
-export * from './core';
+export * from './common/src';
+export * from './core/src';
+export * from './kafka/src';
+export * from './nats-server/src';

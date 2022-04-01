@@ -1,1 +1,0 @@
-export const CORE_MODULE_OPTIONS = Symbol('CORE_MODULE_OPTIONS');

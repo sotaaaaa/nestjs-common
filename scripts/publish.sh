@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 git push --follow-tags origin main
-yarn build
+npm run build
 npm publish --access=public
