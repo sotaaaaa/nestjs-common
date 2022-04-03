@@ -7,12 +7,12 @@ import {
   OnModuleDestroy,
 } from '@nestjs/common';
 import { ClientNats } from '@nestjs/microservices';
-import { NATS_PUBLISH_SERVICE_NAME } from '@vicomm/nats-server/publish/nats.publish.constant';
+import { NATS_PUBLISH_SERVICE_NAME } from '../publish/nats.publish.constant';
 import {
   INatsPublishOptions,
   IRequestNats,
   IResponseNats,
-} from '@vicomm/nats-server/publish/nats.publish.interface';
+} from '../publish/nats.publish.interface';
 import { firstValueFrom, Observable, timeout } from 'rxjs';
 
 @Injectable()

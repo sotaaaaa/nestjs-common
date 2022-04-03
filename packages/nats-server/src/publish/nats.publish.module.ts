@@ -1,7 +1,7 @@
 import { DynamicModule, Global, Module } from '@nestjs/common';
 import { ClientsModule, NatsOptions, Transport } from '@nestjs/microservices';
-import { NATS_PUBLISH_SERVICE_NAME } from '@vicomm/nats-server/publish/nats.publish.constant';
-import { NatsPublishService } from '@vicomm/nats-server/publish/nats.publish.service';
+import { NATS_PUBLISH_SERVICE_NAME } from '../publish/nats.publish.constant';
+import { NatsPublishService } from '../publish/nats.publish.service';
 
 @Global()
 @Module({})

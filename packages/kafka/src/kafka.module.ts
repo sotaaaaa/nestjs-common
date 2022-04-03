@@ -1,6 +1,6 @@
 import { DynamicModule, Module } from '@nestjs/common';
 import { KafkaOptions } from '@nestjs/microservices';
-import { KafkaProducerModule } from '@vicomm/kafka/producer/kafka.producer.module';
+import { KafkaProducerModule } from './producer/kafka.producer.module';
 
 @Module({})
 export class KafkaModule {

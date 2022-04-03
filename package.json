@@ -110,22 +110,6 @@
       "^.+\\.(t|j)s$": "ts-jest"
     },
     "coverageDirectory": "./coverage",
-    "testEnvironment": "node",
-    "modulePaths": [
-      "<rootDir>/packages/"
-    ],
-    "roots": [
-      "<rootDir>/packages/"
-    ],
-    "moduleNameMapper": {
-      "@vicomm/core/(.*)": "<rootDir>/packages/core/src/$1",
-      "@vicomm/core": "<rootDir>/packages/core/src",
-      "@vicomm/common/(.*)": "<rootDir>/packages/common/src/$1",
-      "@vicomm/common": "<rootDir>/packages/common/src",
-      "@vicomm/kafka/(.*)": "<rootDir>/packages/kafka/src/$1",
-      "@vicomm/kafka": "<rootDir>/packages/kafka/src",
-      "@vicomm/nats-server/(.*)": "<rootDir>/packages/nats-server/src/$1",
-      "@vicomm/nats-server": "<rootDir>/packages/nats-server/src"
-    }
+    "testEnvironment": "node"
   }
 }

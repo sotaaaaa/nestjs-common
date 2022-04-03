@@ -1,9 +1,9 @@
 import * as _ from 'lodash';
 
 import { INestApplication, Logger } from '@nestjs/common';
-import { AppUtils } from '@vicomm/common';
-import { ConfigModuleYamlOptions } from '@vicomm/core/setup/interfaces';
-import { MicroserviceTransporterOptions } from '@vicomm/core/setup/interfaces/microservices-transporter.type';
+import { AppUtils } from '../../../common/src';
+import { ConfigModuleYamlOptions } from '../../../core/src/setup/interfaces';
+import { MicroserviceTransporterOptions } from '../../../core/src/setup/interfaces/microservices-transporter.type';
 import { KafkaOptions, MicroserviceOptions, Transport } from '@nestjs/microservices';
 
 export class MicroserviceTransporter {

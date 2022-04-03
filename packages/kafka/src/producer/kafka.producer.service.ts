@@ -7,13 +7,13 @@ import {
   OnModuleDestroy,
 } from '@nestjs/common';
 import { ClientKafka } from '@nestjs/microservices';
-import { KAFKA_TOPICS } from '@vicomm/kafka/kafka.constant';
-import { KAFKA_PRODUCER_SERVICE_NAME } from '@vicomm/kafka/producer/kafka.producer.constant';
+import { KAFKA_TOPICS } from '../kafka.constant';
+import { KAFKA_PRODUCER_SERVICE_NAME } from '../producer/kafka.producer.constant';
 import {
   IKafkaProducerOptions,
   IRequestKafka,
   IResponseKafka,
-} from '@vicomm/kafka/producer/kafka.producer.interface';
+} from '../producer/kafka.producer.interface';
 import { firstValueFrom, Observable, timeout } from 'rxjs';
 
 @Injectable()

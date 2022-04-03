@@ -4,13 +4,10 @@ import * as fs from 'fs';
 
 import { DynamicModule, Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import {
-  ConfigModuleYamlOptions,
-  MicroserviceModuleOptions,
-} from '@vicomm/core/setup/interfaces';
-import { KafkaProducerModule } from '@vicomm/kafka';
+import { ConfigModuleYamlOptions, MicroserviceModuleOptions } from './interfaces';
+import { KafkaProducerModule } from '../../../kafka/src';
 import { KafkaOptions } from '@nestjs/microservices';
-import { NatsPublishModule } from '@vicomm/nats-server';
+import { NatsPublishModule } from '../../../nats-server/src';
 
 @Module({})
 export class MicroserviceModule {

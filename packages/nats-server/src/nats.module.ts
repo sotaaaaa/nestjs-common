@@ -1,6 +1,6 @@
 import { DynamicModule, Module } from '@nestjs/common';
 import { NatsOptions } from '@nestjs/microservices';
-import { NatsPublishModule } from '@vicomm/nats-server/publish';
+import { NatsPublishModule } from './publish';
 
 @Module({})
 export class NatModule {

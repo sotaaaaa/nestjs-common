@@ -1,6 +1,6 @@
 import { DynamicModule, Global, Module } from '@nestjs/common';
 import { ClientsModule, KafkaOptions, Transport } from '@nestjs/microservices';
-import { KafkaProducerService } from '@vicomm/kafka/producer/kafka.producer.service';
+import { KafkaProducerService } from '../producer/kafka.producer.service';
 import { KAFKA_PRODUCER_SERVICE_NAME } from './kafka.producer.constant';
 
 @Global()

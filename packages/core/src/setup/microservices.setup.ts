@@ -1,6 +1,6 @@
 import { INestApplication, Logger } from '@nestjs/common';
-import { AppUtils } from '@vicomm/common';
-import { MicroserviceTransporter } from '@vicomm/core/setup/microservices.transporter';
+import { AppUtils } from '../../../common/src';
+import { MicroserviceTransporter } from '../../../core/src/setup/microservices.transporter';
 
 export interface MicroserviceSetupOptions {
   serviceName: string;
